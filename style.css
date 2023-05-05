@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #023047;
+  --secondary-color: #FFB703;
+  --secondary-color-hover: #F2C043;
+  --secondary-color-active: #F8CD61;
+  --secondary-color-text: #FFF3A8;
+  --font-size: 1rem;
+ }
+
+body {
+  font-family: 'apple-system', 'Segoe UI', 'system-ui', 'Roboto', 'Helvetica Neue', Arial;
+  margin: 0 auto;
+  max-width: 65rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 2.5rem; /* 40px / 16px = 2.5rem */
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--font-size);
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+/* Button */
+
+  button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.6rem 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  button:hover {
+    background-color: var(--secondary-color-hover);
+    color: var(--secondary-color-text);
+  }
+
+  button:active {
+    background-color: var(--secondary-color-active);
+  }
+
+/* END Button */
+
+
+.main-baner {
+  width: 31rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.main-baner-text {
+  height: 5rem;
+  background-color: #F1F1F1;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.left-block-img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.left-block {
+  display: inline-flex;
+  align-self: center;
+  gap: 1rem;
+}
+
+.right-block {
+  align-self: center;
+}
+
+.text {
+  text-align: left;
+}
+
+.second-section {
+  margin-top: 6rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main-baner {
+    display: none;
+  }
+  .second-section {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-section-mobile {
+    display: none;
+  }
+  .second-section-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-baner-img {
+    display: none;
+  }
+  .main-baner-text {
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .main-baner-img {
+    display: block;
+  }
+}
